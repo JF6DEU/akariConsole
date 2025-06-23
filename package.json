@@ -1,0 +1,17 @@
+{
+  "name": "lighting-console",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./index.js"
+  },
+  "author": "",
+  "license": "AGPL-3.0-or-later",
+  "description": "",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "serialport": "^13.0.0",
+    "ws": "^8.18.1"
+  }
+}
