@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body tabindex="0">
+        <div class="back"></div>
+        <div class="menu">
+            <div class="button">
+                <div class="live">ライブ</div>
+                <div class="sub">SUB</div>
+                <div class="patch_s">パッチ仕込</div>
+                <div class="config">設定</div>
+            </div>
+            <div class="line"></div>
+            <div class="view_live">
+                <div class="live_container">
+                    <div class="channel_view">
+                        <!-- JSから入力 -->
+                    </div>
+                </div>
+            </div>
+            <div class="subfadar_panel">
+                <div class="subfadar_container">
+                    <div class="subfadar_value">
+                        <!-- JSから入力 -->
+                    </div>
+                    <div class="subfadar_page">ページ：<span class="subfadar_page_no">0</span></div>
+                    <div class="subfadar_button">
+                        <div class="subfadar_add">追加</div>
+                        <div class="subfadar_page_change">ページ切替</div>
+                        <div class="subfadar_del">削除</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sikomi_patch">
+                <div class="patch_container">
+                    <div class="patch_container_dimmer">
+                        <!-- JSから入力 -->
+                    </div>
+                    <div class="patch_button">
+                        <div class="patch_dim">調光仕込み</div>
+                        <div class="patch_st">直仕込み</div>
+                        <div class="patch_no_dim">N.D</div>
+                        <div class="patch_off">フェーダー払</div>
+                    </div>
+                </div>
+            </div>
+            <div class="config_edit">
+                <!-- TODO: ここ作る -->
+            </div>
+        </div>
+        <div class="log">
+            <div class="log_main"></div>
+        </div>
+        <div class="mathpanel">
+            <div class="mathpanel_container" onclick="javascript: c('mathpanel_input_from_keyboard').focus()">
+                <form id="mathin">
+                    <input placeholder="値?" maxlength="3" class="mathpanel_input_from_keyboard">
+                </form>
+                <div class="mathpanel_input">
+                    <!-- JSから入力 -->
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./script.js" async defer></script>
+</html>

@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+}
+html,head,body{
+    margin:0;
+    padding:0;
+    color:#fff;
+    cursor:default !important;
+    font-size:1rem;
+}
+.back{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background-color:#000;
+}
+.menu{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    z-index:2;
+}
+.menu .button{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    font-size:2rem;
+    gap:0 1rem;
+}
+.menu .button div{
+    border:2px solid #227aff;
+}
+.line{
+    height:0.25rem;
+    width:100vw;
+    background-color:#fff;
+    border:2px solid #fff;
+    border-radius: 2px;
+    margin:0.5rem 0;
+}
+.menu .view_live{
+    display:none;
+}
+.menu .view_live .live_container{
+    display:flex;
+    justify-content: center;
+}
+.menu .view_live .live_container .channel_view{
+    width:60%;
+    display:flex;
+    flex-wrap:wrap;
+}
+.menu .view_live .live_container .channel_view .channel_container{
+    width:5rem;
+    height:5rem;
+    border:1px solid #bbb;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu .view_live .live_container .channel_view .channel_container .channel_head{
+    width:100%;
+    text-align: center;
+    background-color:#00f;
+}
+.menu .sikomi_patch{
+    display:none;
+}
+.menu .sikomi_patch .patch_container{
+    display:flex;
+    gap:1rem 0;
+    flex-direction: column;
+    align-items: center;
+}
+.menu .sikomi_patch .patch_container .patch_container_dimmer{
+    width:60%;
+    display:flex;
+    flex-wrap:wrap;
+}
+.menu .sikomi_patch .patch_container .patch_container_dimmer .patch_channel_container{
+    width:5rem;
+    height:5rem;
+    border:1px solid #bbb;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu .sikomi_patch .patch_container .patch_container_dimmer .patch_channel_container .patch_channel_head{
+    width:100%;
+    text-align: center;
+    background-color:#000;
+}
+.menu .sikomi_patch .patch_container .patch_container_led{
+    width:60%;
+    display:flex;
+    flex-wrap:wrap;
+}
+.menu .sikomi_patch .patch_container .patch_container_led .led_patch_channel_container{
+    width:5rem;
+    height:5rem;
+    border:1px solid #bbb;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu .sikomi_patch .patch_container .patch_container_led .led_patch_channel_container .led_patch_channel_head{
+    width:100%;
+    text-align: center;
+    background-color:#000;
+}
+.menu .sikomi_patch .patch_container .patch_button{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    font-size:2rem;
+    gap:0 1rem;
+}
+.menu .sikomi_patch .patch_container .patch_button div{
+    border:2px solid #227aff;
+}
+.log{
+    display:block;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100vw;
+    height:7rem;
+    scrollbar-width: none;
+    border: 1px solid #0f0;
+    overflow:scroll;
+    z-index:9;
+    background:#000;
+}
+.log .loog_main{
+    width:100%;
+    height:100%;
+}
+.log .log_main span{
+    display:block;
+    width:100%;
+}
+.selected {
+    border: 2px solid red !important;
+}
+.selected2 {
+    border: 2px solid #0f0 !important;
+}
+.subfadar_panel{
+    display:none;
+}
+.config_edit{
+    display:none;
+}
+.mathpanel{
+    display:none;
+    position:absolute;
+    backdrop-filter: blur(2px) brightness(60%);
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    z-index:10;
+}
+.mathpanel_container{
+    display:flex;
+    width:100%;
+    height:100%;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    gap:1rem 0;
+}
+.mathpanel_input{
+    display:flex;
+    flex-wrap:wrap;
+    width:calc((4.4rem * 3) + (1rem * 2));
+    gap:1rem;
+}
+.mathpanel_input_key{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.2rem;
+    background-color:#999;
+    width:4.4rem;
+    height:4.4rem;
+}
+.mathpanel_input_from_keyboard{
+    border:none;
+    width: calc((4.4rem * 3) + (1rem * 2));
+    font-size:4rem;
+    height: 4.1rem;
+}
+.subfadar_panel{
+    display:none;
+}
+.subfadar_panel .subfadar_container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subfadar_panel .subfadar_container .subfadar_value{
+    width:60%;
+    display:flex;
+    flex-wrap:wrap;
+}
+.subfadar_panel .subfadar_container .subfadar_value .sub_channel_container{
+    width:5rem;
+    height:5rem;
+    border:1px solid #bbb;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subfadar_panel .subfadar_container .subfadar_value .sub_channel_container .sub_channel_head{
+    width:100%;
+    text-align: center;
+}
+.subfadar_panel .subfadar_container .subfadar_button{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    font-size:2rem;
+    gap:0 1rem;
+}
+.subfadar_panel .subfadar_container .subfadar_button div{
+    border: 2px solid #227aff;
+}
