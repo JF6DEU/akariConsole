@@ -5,7 +5,7 @@ from PyDMX import *
 
 # 初期化（ポートは環境に合わせて変更）
 port = 'COM4'
-ser = PyDMX(port);
+ser = PyDMX(port)
 
 def send_dmx(data):
     # 入力されたDMX配列を0〜512チャンネル分に調整
